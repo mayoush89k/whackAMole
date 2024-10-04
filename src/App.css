@@ -40,3 +40,106 @@
 .read-the-docs {
   color: #888;
 }
+
+/* .mainContainer{
+  background-image: url(./assets/background1.jpg);
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 800px;
+} */
+
+/* .mole{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/mole.png);
+  /* background-repeat: no-repeat;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out; 
+
+} */
+
+.container {
+  position: relative;
+  overflow: hidden;
+  background-image: url(./assets/background1.jpg);
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mole{
+  width: 100px;
+  height: 150px;
+}
+
+.mole1,
+.mole2,
+.mole3 {
+  /* background-image: url(./assets/mole-removebg.png); */
+  /* background-size: contain; */
+  /* background-position: center; */
+  width: 100px;
+  height: 150px;
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  font-size: 24px;
+  /* color: #2c3e50
+  transition: bottom 0.5s ease-in-out; */
+}
+.mole1 {
+  left: 130px;
+  bottom: 47%;
+}
+
+.movingMoleUp{
+  animation: movingUp .4s ease-in;
+}
+.movingMoleDown{
+  /* animation: movingDown .4s ease-in; */
+}
+.mole2 {
+  bottom: 47%;
+  left: 485px;
+}
+
+.mole3 {
+  left: 840px;
+  bottom: 47%;
+}
+
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+
+@keyframes movingUp {
+  0% {
+      transform: scaleY(0) scaleX(1)  translateY(200px)
+  }
+
+  to {
+      transform: scaleY(1) scaleX(1) translateY(10)
+  }
+}
+@keyframes movingDown {
+  0% {
+    transform: scaleY(1) scaleX(1) translateY(10)
+  }
+  
+  to {
+    transform: scaleY(0) scaleX(1)  translateY(200px)
+  }
+}
+
+.whacked{
+  width: 140px;
+  height: 230px;
+}
